@@ -5,6 +5,9 @@ const geocode = require('./utils/geocode');
 const weather = require('./utils/weather');
 
 const app = express();
+const port = process.env.PORT || 3000;
+
+// Defined paths for express config
 const publicPath = path.join(__dirname, '../public');
 const viewPath = path.join(__dirname, '../templates/views');
 const partialPath = path.join(__dirname, '../templates/partials');
@@ -89,6 +92,8 @@ app.get('*', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('Web Server is running on port 3000');
+
+// We are using variable as port number that we will get from heroku
+app.listen(port, () => {
+    console.log(`Web Server is running on port ${port}`);
 });
