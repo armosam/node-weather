@@ -21,7 +21,7 @@ app.get('', (req, res) => {
     res.render('index', {
         title: 'Home Page',
         name: 'Armen Bablanyan',
-        image: '/img/11.jpg'
+        image: '/img/about.jpg'
     });
 });
 
@@ -29,7 +29,7 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About page',
         name: 'Armen Bablanyan',
-        image: '/img/11.jpg'
+        image: '/img/about.jpg'
     });
 });
 
