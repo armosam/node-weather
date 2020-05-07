@@ -8,7 +8,6 @@ const geocoding = function(address, callback){
 
         if(err){
             callback(`API call filed due error. ${err.code}: ${err.message}`, undefined);
-
         }else{
             if(body.message){
                 callback(body.message, undefined);
