@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <h2>Weather search by {{name}}</h2> 
+            <p>You can get weather and geodata by address, zip and etc.</p>
+
+            <form>
+                <input placeholder="Address, Zip">
+                <button>Search</button>
+            </form>   
+            <p id="message-1"></p> 
+            <p id="message-2"></p> 
+        </div>
+        {{>footer}}
+        
+        <script src="/js/script.js"></script>
+    </body>
+</html>

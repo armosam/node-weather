@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        {{>header}}
+
+        <h2>{{geodataTitle}}</h2> 
+        <div>
+            <h5>Location Name: {{place_name}}</h5>
+            <h5>Latitude: {{latitude}}</h5>
+            <h5>Longitude: {{longitude}}</h5>
+        </div>
+        <hr>
+        <h2>{{weatherTitle}}</h2> 
+        <div>
+            <h5>Name: {{weatherData.name}}</h5>
+            <h5>Region: {{weatherData.region}}</h5>
+            <h5>Country: {{weatherData.country}}</h5>
+            <h5>Time Zone: {{weatherData.time_zone}}</h5>
+            <h5>Temperature (C) {{weatherData.temp_c}}</h5>
+            <h5>Temperature (F) {{weatherData.temp_f}}</h5>
+            <h5>Humidity {{weatherData.humidity}}</h5>
+            <h5>Precipation (mm) {{weatherData.precip_mm}}</h5>
+            <h5>Precipation (in) {{weatherData.precip_in}}</h5>
+            <h5>Wind Direction {{weatherData.wind_dir}}</h5>
+        </div>
+        {{>footer}}
+    </body>
+</html>
