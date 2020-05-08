@@ -63,3 +63,11 @@ button {
     color: white;
     padding: 8px;   
 }
+
+.contact-form input, textarea, button{
+    margin: 5px;
+}
+
+.contact-form input, textarea{
+    width: 200px;
+}

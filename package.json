@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,css,hbs"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,8 @@
   },
   "engines": {
     "node": "10.x"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
