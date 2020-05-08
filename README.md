@@ -1,4 +1,4 @@
-# web-server
+# weather and geodata
  node web server based on express module
 
 There are api endpoints to get weather and geodata
@@ -7,6 +7,6 @@ show weather and geodata on the web page
 
 To open application run web server first by command
 
-node src/app.js
+npm run dev
 
 then open site in the brawser: localhost:3000 
