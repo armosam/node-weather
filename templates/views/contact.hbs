@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>{{title}}</title>
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
-    <body>
-        <div class="main-content">
-            {{>header}}
-            <h2>Contact Us</h2>
-            <div>Please contact us with any quastion and sugestions... </div>
-            <br>
-            <div class="contact-form">
-                <form>
-                    <input placeholder="Your name" name="name"><br>
-                    <input placeholder="Your email" name="email"><br>
-                    <textarea placeholder="Message" rows="4" name="message"></textarea><br>
-                    <button>Submit</button>
-                </form>
-            </div>
-        </div>
-        {{>footer}}
-    </body>
+<html lang="en">
+  {{>head}}
+  <body>
+
+    {{>header}}
+    
+        <div>Please contact us with any quastion and sugestions... </div>
+        <br>
+        <form class="">
+            <input class="form-control" placeholder="Your name" name="name"><br>
+            <input class="form-control" placeholder="Your email" name="email"><br>
+            <textarea class="form-control" placeholder="Message" rows="4" name="message"></textarea><br>
+            <button class="btn btn-success">Submit</button>
+        </form>
+    
+    {{>footer}}
+    
+    {{>bottom}}
+  </body>
 </html>

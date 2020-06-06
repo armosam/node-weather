@@ -28,6 +28,13 @@ app.get('', (req, res) => {
     });
 });
 
+app.get('/service', (req, res) => {
+    res.render('service', {
+        title: 'Our Services',
+        name: 'Armen Bablanyan'
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About page',

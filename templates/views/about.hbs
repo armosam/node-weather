@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>{{title}}</title>
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
-    <body>
-        <div class="main-content">
-            {{>header}}
-            <h2>About application</h2>
-            <div>This application helps to get weather and geodata for given location.</div>
-            <div>Application will use real data from 3-rd party APIs to fetch data.</div>
-            <br>
-            <img src="{{image}}" alt="{{name}}">
-        </div>
-        {{>footer}}
-    </body>
+<html lang="en">
+  {{>head}}
+  <body>
+
+    {{>header}}
+    
+        <h2>About application</h2>
+        <div>This application helps to get weather and geodata for given location.</div>
+        <div>Application will use real data from 3-rd party APIs to fetch data.</div>
+        <br>
+        <img src="{{image}}" alt="{{name}} width="300">
+    
+    {{>footer}}
+    
+    {{>bottom}}
+  </body>
 </html>
